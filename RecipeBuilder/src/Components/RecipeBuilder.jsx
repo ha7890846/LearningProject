@@ -124,14 +124,10 @@ const RecipeBuilder = () => {
           </tbody>
         </table>
       </div>
-      <div className="desc">
+      <div className="description">
         <label htmlFor="description">How to Cook : </label>
-        <input id="descbox"
-          type="text"
-          placeholder="Description"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
+        <textarea name="descriptionBox" id="desc" value={description}
+          onChange={(e) => setDescription(e.target.value)} placeholder="Write your recipe method here......."/>
       </div>
       <div>
         <button type="submit" onClick={addRecipe}>
